@@ -1,0 +1,244 @@
+#info-div {
+  --primary-color: #00a9bf;
+  min-height: 100vh;
+  padding: 0 2rem 3rem;
+
+  @media screen and (min-width: 1250px) {
+    padding: 0 8rem 3rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 0 1rem 3rem;
+  }
+}
+
+.info__back {
+  font-size: 3rem;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  color: #00a9bf;
+
+  .info__back-icon:hover {
+    animation-name: arrowMove;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @media screen and (max-width: 800px) {
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+#info-div .head-text {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2% 0;
+
+  span {
+    color: var(--primary-color);
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 4rem 0 2rem 0;
+  }
+
+  @media screen and (max-width: 540px) {
+    font-size: 2rem;
+  }
+}
+
+#info-div .p-text {
+  font-size: 18px;
+  color: #343434;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 23px;
+  }
+}
+
+#info-div .links {
+  list-style: none;
+  margin: 2rem 0;
+
+  .live {
+    color: #c90000fa;
+  }
+
+  .code {
+    color: #018901;
+  }
+
+  .video {
+    color: #0083ff;
+  }
+
+  .p-text {
+    margin-bottom: 0.5rem;
+
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      margin-left: 8px;
+    }
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
+#info-div .video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  align-items: flex-end;
+
+  img {
+    height: 300px;
+    margin-left: 2rem;
+    object-fit: contain;
+
+    &:hover {
+      animation-name: imageMove;
+      animation-duration: 0.3s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    iframe{
+      width: 978px;
+      height: 550px;
+    }
+
+    img {
+      height: 500px;
+    }
+  }
+}
+
+#info-div .service-used {
+  margin-top: 2rem;
+
+  @media screen and (max-width: 700px) {
+    margin-top: 1rem;
+  }
+}
+
+#info-div .sub-heading {
+  margin: 0;
+  font-size: 35px;
+
+  @media screen and (max-width: 800px) {
+    padding: 1rem 0;
+  }
+
+  @media screen and (max-width: 540px) {
+    font-size: 25px;
+  }
+}
+
+#info-div .tech-used,
+#info-div .service-used {
+  list-style: none;
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    .p-text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-weight: bold;
+      margin: 0 3rem 2rem 0;
+
+      img {
+        height: 100px;
+        width: 100px;
+        padding: 1rem 1rem;
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
+        margin-bottom: 0.5rem;
+
+        &:hover {
+          background-color: rgba(128, 222, 234, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+        }
+
+        @media screen and (max-width: 900px) {
+          height: 90px;
+          width: 90px;
+        }
+
+        @media screen and (min-width: 2000px) {
+          height: 150px;
+          width: 150px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      justify-content: center;
+    }
+  }
+}
+
+#info-div .media {
+  margin-top: 3rem;
+  .imgs {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+
+    img {
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease-in;
+      outline: 4px solid transparent;
+      height: fit-content;
+      width: 100%;
+
+      &:hover {
+        outline: 6px solid var(--primary-color);
+        outline-offset: 10px;
+      }
+    }
+
+    @media screen and (min-width: 2000px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1rem);
+  }
+}
+
+@keyframes imageMove {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
