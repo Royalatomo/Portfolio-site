@@ -62,7 +62,7 @@ const Header = () => {
       >
         {[
           "https://ik.imagekit.io/imdfhuoko/Portfolio/Logos/Technologies/react_4axAmrZN2.png",
-          "https://ik.imagekit.io/imdfhuoko/Portfolio/Logos/Technologies/typescript_6g1-f4job.png",
+          "https://ik.imagekit.io/imdfhuoko/Portfolio/Logos/Technologies/ts.png",
           "https://ik.imagekit.io/imdfhuoko/Portfolio/Logos/Technologies/sass_ScB3FxENR.png",
           "https://ik.imagekit.io/imdfhuoko/Portfolio/Logos/Technologies/redux_p5q4ZFrBQ.png",
           "https://ik.imagekit.io/imdfhuoko/Portfolio/Logos/Technologies/node_rOd6qZu56.png",
